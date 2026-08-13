@@ -11,7 +11,7 @@ content:
       - name: date
         label: Date
         type: date
-      - name: content
+      - name: body
         label: Content
         type: rich-text
 
@@ -20,6 +20,6 @@ content:
     path: resume.md
     type: file
     fields:
-      - name: content
+      - name: body
         label: Content
         type: rich-text
