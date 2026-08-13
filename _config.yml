@@ -22,7 +22,7 @@ title: Where is the Library?
 description: >-
   Coming soon.
 baseurl: ""
-url: "https://garet121.github.io"
+url: "https://where-is-the-library.netlify.app"
 linkedin_username: garetmarling
 github_username: garet121
 
@@ -30,6 +30,18 @@ github_username: garet121
 theme: minima
 plugins:
   - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

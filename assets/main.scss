@@ -1,0 +1,191 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+@import "minima";
+
+// ── Typography ──────────────────────────────────────────────────────────────
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.8;
+  color: #1a1a1a;
+  background: #fff;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1a1a1a;
+}
+
+// ── Site header ─────────────────────────────────────────────────────────────
+
+.site-header {
+  border-top: 4px solid #1a1a1a;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  padding: 18px 0;
+  min-height: auto;
+
+  .site-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+
+    &:visited { color: #1a1a1a; }
+    &:hover { text-decoration: none; color: #444; }
+  }
+
+  .site-nav .page-link {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.95rem;
+    color: #444;
+    letter-spacing: 0.02em;
+
+    &:hover { color: #1a1a1a; }
+  }
+}
+
+// ── Home / post list ────────────────────────────────────────────────────────
+
+.home {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.post-list-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 32px;
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid #eee;
+    padding: 28px 0;
+  }
+
+  .post-meta {
+    font-size: 0.82rem;
+    color: #888;
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+    margin-bottom: 6px;
+  }
+
+  a {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.55rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    line-height: 1.25;
+
+    &:hover { color: #555; }
+  }
+}
+
+// ── Post page ───────────────────────────────────────────────────────────────
+
+.post {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 24px;
+
+  .post-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.6rem;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  .post-meta {
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+  }
+}
+
+.post-content {
+  p { margin-bottom: 1.5em; }
+
+  h2, h3 {
+    margin-top: 2em;
+    margin-bottom: 0.6em;
+  }
+
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.25rem; }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2em auto;
+  }
+
+  a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    &:hover { color: #555; }
+  }
+
+  ul, ol {
+    padding-left: 1.5em;
+    margin-bottom: 1.5em;
+
+    li { margin-bottom: 0.4em; }
+  }
+
+  blockquote {
+    border-left: 3px solid #1a1a1a;
+    padding-left: 1.2em;
+    margin-left: 0;
+    font-style: italic;
+    color: #555;
+  }
+}
+
+// ── Pages (About, Resume) ────────────────────────────────────────────────────
+
+.page-content .wrapper {
+  max-width: 680px;
+  padding: 48px 24px;
+}
+
+// ── Footer ───────────────────────────────────────────────────────────────────
+
+.site-footer {
+  border-top: 1px solid #ddd;
+  background: #fff;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.85rem;
+  color: #888;
+  padding: 32px 0;
+
+  a { color: #888; &:hover { color: #1a1a1a; } }
+}
