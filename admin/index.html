@@ -4,53 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
-    <script>window.CMS_MANUAL_INIT = true;</script>
   </head>
   <body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    <script>
-      CMS.init({
-        config: {
-          backend: {
-            name: 'github',
-            repo: 'garet121/Garet121.github.io',
-            branch: 'main',
-            auth_type: 'pkce',
-            app_id: 'Ov23liNaIe8QrUrU9Eem'
-          },
-          media_folder: 'assets/images/uploads',
-          public_folder: '/assets/images/uploads',
-          collections: [
-            {
-              name: 'posts',
-              label: 'Blog Posts',
-              folder: '_posts',
-              create: true,
-              slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
-              fields: [
-                { label: 'Title', name: 'title', widget: 'string' },
-                { label: 'Date', name: 'date', widget: 'datetime' },
-                { label: 'Body', name: 'body', widget: 'markdown' }
-              ]
-            },
-            {
-              name: 'pages',
-              label: 'Pages',
-              files: [
-                {
-                  label: 'Resume',
-                  name: 'resume',
-                  file: 'resume.md',
-                  fields: [
-                    { label: 'Title', name: 'title', widget: 'string' },
-                    { label: 'Body', name: 'body', widget: 'markdown' }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      });
-    </script>
+    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
   </body>
 </html>
